@@ -1,0 +1,111 @@
+<!DOCUMENT html>
+<html>
+<head>
+	<style>
+	   body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color:#8B0000;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+/* visited link */
+a:visited {
+  color:white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #9400D3;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #0000FF;
+}
+article {
+  font-family: Verdana, sans-serif;
+
+}
+</style>
+	
+</head>
+<body>
+	 <div class="header">
+  <h1>INDONESIA</h1>
+</div>
+<div>
+<ul>
+  <li><a class="active" href="index1.html">Beranda</a></li>
+</ul>
+</div>
+<article>
+	<h1>FORM DAFTAR</h1>
+
+  <form>
+	<label>Nama Depan</label>
+	<input type="text">
+	<label>Nama Belakang</label>
+	<input type="text"><br><br>
+	<label>Tempat Lahir</label>
+	<input list="tempat lahir">
+	<datalist id="tempat lahir">
+		<option value="Kab Madiun">
+		<option value="Kab Ngawi">
+		<option value="Kab Magetan">
+		<option value="Kab ponorogo">
+		<option value="Lainnya">
+	</datalist><br><br>
+	<label>Tanggal Lahir</label>
+	<input type="date"> <br> <br>
+
+	<label>Jenis kelamin</label>
+	<input type="radio" id="laki-laki">
+	<label>laki-laki</label>
+	<input type="radio" id="perempuan">
+	<label>perempuan</label><br><br>
+
+	<label>Hobby</label>
+	<input type="checkbox" id="olahraga" value="olahraga">
+	<label>olahraga</label>
+	<input type="checkbox" id="mebaca" value="membaca">
+	<label>membaca</label>
+	<input type="checkbox" id="travelling" value="travelling">
+	<label>travelling</label><br><br>
+	<label>Alamat</label>
+	<textarea rows="3"></textarea><br><br>
+
+	<input type="Submit" value="Daftar">
+	<input type="Reset">
+  </form>
+  </article>
+
+</body>
+</html>
